@@ -1,3 +1,4 @@
+/* Etiquetas globales */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,23 +7,108 @@
 
 html {
     font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
     background-color: white;
-    font-size: 1.6rem;
 }
 
+/*  */
+/* Etiquetas del header */
+/*  */
+header {
+    height: 3rem;
+    /* Es necesario para que este arriba, no sé porque */
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    /* Para que este a la derecha el menu, las 2 lineas son necesarias */
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    /* Para que este a la centrado el menu, las 2 lineas son necesarias */
+}
+
+nav li {
+    display: inline-block;
+    margin: .5rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+/*  */
+/* Etiquetas del main */
+/*  */
 #contenedor_principal {
     margin: 10rem auto;
     width: 100%;
     min-width: 600px;
     max-width: 900px;
-    text-align: center;
+     text-align: center; /* para que este centrado la info principal */
+    height: 62vh;
 }
 
 #img_google {
-    margin-left: auto;
-    margin-right: auto;
-    /* text-align: center; */
+    margin: 4rem auto;
+}
+
+#logo {
+    width: 30%;
+}
+
+#Caja_que_contiene_la_busqueda {
+    border: 0.1rem solid rgb(168, 168, 168);
+    border-radius: 3rem;
+    width: 60%;
+    margin: 2rem auto;
+    display: flex;
+    text-align: left;
+}
+
+#Logo_Lupa {
+    margin: 0.1rem 1rem;
+     flex-grow: 1; /* Para que la lupa quede a la izq y ocupa todo el espacio y al final queda el microfono*/
+}
+
+#logo_microfono {
+    margin: 0.1rem 1rem;
+}
+
+.Boton {
+    display: inline-block;
+    margin: .7rem;
+    padding: 1rem;
+    background-color: #eeedf1;
+    color: #737179;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+}
+
+/*  */
+/* parte del footer */
+/*  */
+
+footer {
+    display: flex; /*  Para que los dos div queden al mismo nivel  */
+    /* Si se ocupaba "display: inline-block;" solo ocupaba el tamaño de las div, es decir quedaba a un costado y no ocupaba todo el ancho del footer */
+    background-color: #eeedf1;
+    border: solid .1rem #c2c2c2;
+}
+
+#Lado_Izq_Footer {
+    flex-grow: 1; 
+    /* para que quede uno a la derecha y el otro a la izq */
+}
+
+.footerElement li {
+    list-style: none;
+    display: inline-block;
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #737179;
 }
