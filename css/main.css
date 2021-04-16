@@ -36,10 +36,29 @@ header nav .nav-right-section {
     display: flex;
     list-style: none;
     justify-content: center;
-    align-items: center;
+    align-items: center; /*  alinea de manera vertical */
 }
 
 nav .nav-right-section a {
     margin-right: 1rem;
     color: #000000;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    /* las comillas (' ') para pergar la URL dentro son obligatorias | esta etiqueta trae una imagen de algun lado */
+    background-repeat: no-repeat;
+    /* para que la imagen no se repita si es muy chica o se expanda si es muy grande */
+    background-position: center;
+    /* para que se posicione en el centro del contenedor */
+    background-size: contain;
+    /* para que la imagen se adapte al tamaño del contenedor */
+    width: 2.5rem;
+    height: 2.5rem;
+    /* estas 2 lineas de arriba son para darle el tamaño a la imagen */
+}
+
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 1rem;
 }
