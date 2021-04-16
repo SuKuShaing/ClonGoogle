@@ -1,4 +1,45 @@
+/* Etiquetas globales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-    background-color: white;
+    font-size: 1.3rem;
+}
+
+a {
+     text-decoration: none; /* para quitar la linea de abajo del link */
+     cursor: pointer; /* para poner la mano en el puntero */
+}
+
+header {
+    width: 100%;
+    height: 6rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    /* Estas 2 lineas de arriba son para dejar el menu en la parte derecha */
+}
+
+header nav .nav-right-section {
+    width: 25rem;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a {
+    margin-right: 1rem;
+    color: #000000;
 }
