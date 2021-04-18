@@ -86,3 +86,79 @@ main .main-logo {
 main .main-logo img {
     width: 30rem;
 }
+
+main .main-input {
+    width: 53rem;
+    margin: 0 auto;
+    margin-bottom: 3.5rem;
+}
+
+main .main-input-container {
+    width: 52.5rem;
+    border-radius: 10rem;
+    border: 1px solid #dfe1e5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* estas 3 lineas de arriba son para centrar y que quede todo en la misma linea */
+}
+
+main .main-input input {
+    width: 45rem;
+    height: 4rem;
+    border: none; /* para sacar el borde que trae por defecto el input */
+    outline: none; /* para borra el borde al hacer click en el input */
+}
+
+main .main-input-container:hover {
+    /* esto se utiliza para darle la sombra al momento de pasar el mouse
+    el :hover al final del nombre de la clase define que se utiliza cuando el mouse pasa por encima del contenedor */
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .main-input .search-icon {
+    background-image: url('https://images.vexels.com/media/users/3/132068/isolated/preview/f9bb81e576c1a361c61a8c08945b2c48-icono-de-b-uacute-squeda-by-vexels.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+main .main-input .micro-icon {
+    background-image: url('https://freepngimg.com/download/microphone/70666-voice-microphone-google-search-logo-png-file-hd.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 1.8rem;
+    height: 1.8rem;
+    cursor: pointer;
+}
+
+main .main-button {
+    width: 54rem;
+    margin: 0 auto;
+}
+
+main .main-button div {
+    display: inline-block;
+}
+
+main .main-button button {
+    height: 3.6rem;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 1.4rem;
+    color: #5f6368;
+    border-radius: .5rem;
+    padding: 0 1.5rem;
+    margin-right: 1.5rem;
+}
+
+main .main-button button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgb(0,0,0,0.1);
+    color: #222;
+    background-color: f8f8f8;
+}
