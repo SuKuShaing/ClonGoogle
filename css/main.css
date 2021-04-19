@@ -143,6 +143,7 @@ main .main-button {
 
 main .main-button div {
     display: inline-block;
+    /* para que los botones se muestren uno al lado del otro */
 }
 
 main .main-button button {
@@ -161,4 +162,44 @@ main .main-button button:hover {
     box-shadow: 0 1px 1px rgb(0,0,0,0.1);
     color: #222;
     background-color: f8f8f8;
+}
+
+/*  */
+/* Etiquetas Para el footer */
+/*  */
+
+footer {
+    width: 100%;
+    height: 5rem;
+    position: absolute;
+    bottom: 0;
+    /* estas dos lineas de arriba son para que el footer este siempre abajo */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Estas dos lineas de arriba hace 2 columnas en el footer */
+    align-items: center;
+    font-size: 1.3rem;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    margin: 1rem;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left;
+}
+
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 1rem;
+    color: #5f6368;
 }
